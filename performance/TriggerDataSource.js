@@ -21,7 +21,7 @@ TriggerDataSource.prototype = {
                     out = out();
                 }
                 observer.onNext(out);
-                observer.onCompleted();
+                observer.complete();
             });
         });
     },
