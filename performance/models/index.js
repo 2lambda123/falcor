@@ -13,7 +13,7 @@ module.exports = function() {
     var emptyModel = new falcor.Model();
 
     var model = new falcor.Model({cache: Cache()});
-    model._root.unsafeMode = true;
+    model._recycleJSON = true;
 
     var modelWithSource = new falcor.Model({source: new LocalDataStore(Cache())});
     modelWithSource._root.unsafeMode = true;
