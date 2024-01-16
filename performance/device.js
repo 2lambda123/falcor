@@ -13,5 +13,5 @@ try {
     device.runTests(suite, testRunner, {}, CSVFormatter);
 
 } catch (e) {
-    console.log('Not running device tests. Need to npm install "nf-falcor-device-perf"');
+    console.error('Not running device tests. Need to npm install "nf-falcor-device-perf"');
 }

@@ -21,7 +21,7 @@ var gc = function() {
 };
 
 var env = navigator.userAgent;
-var logger = console.log.bind(console);
+var logger = console.error.bind(console);
 var resultsReporter = compose(testReporter.resultsReporter, CSVFormatter.toTable);
 var benchmarkReporter = compose(testReporter.benchmarkReporter, CSVFormatter.toRow.bind(null, env));
 

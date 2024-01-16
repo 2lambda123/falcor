@@ -36,5 +36,6 @@ var resultsToTable = function(results) {
 
 module.exports = {
     toRow: benchmarkToRow,
-    toTable: resultsToTable
+    toTable: resultsToTable,
+    csvTransform: csvTransform
 };
