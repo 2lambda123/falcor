@@ -1,4 +1,13 @@
-var Observable = Rx.Observable,
+var { Observable } = require('rxjs');
+var Disposable = Rx.Disposable,
+SENTINEL_SIZE = 50,
+isArray = Array.isArray,
+GENERATION_GENERATION = 0,
+OBSERVER_GENERATION = 0,
+µTime = 1,
+µRate = 0.25,
+µSize = 0.25,
+MIN_SAFE_INTEGER = -Math.pow(2, 53) - 1;
     Disposable = Rx.Disposable,
     SENTINEL_SIZE = 50,
     isArray = Array.isArray,

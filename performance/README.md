@@ -1,20 +1,24 @@
 # Running Performance Tests
 
-* `npm run perf`
+* `npm run perf` 
+
+- Run this command to execute performance tests on configured browsers and NodeJS, after building bundles. The results will be saved to CSV files in the `performance/out` directory.
 
        Runs performance tests on configured browsers and NodeJS, after building bundles.
 
-* `gulp perfBuild`
+* `gulp perfBuild` 
+
+- Use this command to build bundles for browser/device testing.
 
        Build bundles for browser/device testing.
 
 Browser tests are run through Karma, which should be installed locally as an npm devDependency.
 
-All results will be saved to CSV files in the `performance/out` directory.
+The results will be saved to CSV files in the `performance/out` directory, and they can be interpreted for performance analysis.
 
-## More Fine Grained Control
+## Interpreting Results
 
-To run tests on other browsers:
+To run tests using different browser configurations:
 
 `karma start --browsers=[comma separated list of browsers]`
 
@@ -28,9 +32,9 @@ It's worth noting that running performance tests in parallel on multiple browser
 
 * `performance/browser.js`
 
-       Defines the tests and configuration to use for browser performance tests.
+       Defines the tests and configuration for browser performance tests. This file can be modified to add or enhance performance tests.
 
 * `performance/node.js`
 
-       Defines the tests and configuration to use for NodeJS performance tests.
+       Defines the tests and configuration for NodeJS performance tests. This file can be modified to add or enhance performance tests.
 
